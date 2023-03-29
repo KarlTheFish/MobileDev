@@ -14,8 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PhoneCamera.unity
     guid: df8ae0b2957d8e6408790ef400e17924
+  - enabled: 1
+    path: Assets/Scenes/AR.unity
+    guid: 30e2be13bbaa80b4ca477653246fa4c1
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5369bee48ca9da44aab8802d4d28c7fd,
+      type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b18602ccfe44d91398eb781e09387c1a,
       type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 3efed31ded1b2f145ae61895fbcf3fd0, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 63ee5b7732278654fb2c697e19eb2c51,
+      type: 2}
