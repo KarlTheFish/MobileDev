@@ -24,7 +24,10 @@ public class SettingsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        username = userData.text;
+        string path = "Assets/user.txt";
+        StreamReader reader = new StreamReader(path);
+
+        username = reader.ReadLine();
 
         if(username != "")
              usernameInput.text = username;
