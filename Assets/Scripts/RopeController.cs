@@ -88,15 +88,6 @@ public class RopeController : MonoBehaviour
                 UpdateRopeSimulation(allRopeSections, timeStep);
             }
         }
-
-
-        ////Move what is hanging from the rope to the end of the rope
-        ////This will not always work because when what's connected to the rope has collided, the rope
-        ////is not aware of it so it will continue to move, which will teleport the cube away from the obstacle
-        //whatIsHangingFromTheRope.GetComponent<Rigidbody>().MovePosition(allRopeSections[0].pos);
-
-        ////Make what's hanging from the rope look at the next to last rope position to make it rotate with the rope
-        //whatIsHangingFromTheRope.LookAt(allRopeSections[1].pos);
     }
 
 
@@ -135,9 +126,7 @@ public class RopeController : MonoBehaviour
         allRopeSections[allRopeSections.Count - 1] = lastRopeSection;
 
 
-        //
         //Calculate the next pos and vel with Forward Euler
-        //
         //Calculate acceleration in each rope section which is what is needed to get the next pos and vel
         List<Vector3> accelerations = CalculateAccelerations(allRopeSections);
 
@@ -162,10 +151,7 @@ public class RopeController : MonoBehaviour
         //Add the last which is always the same because it's attached to something
         nextPosVelForwardEuler.Add(allRopeSections[allRopeSections.Count - 1]);
 
-
-        //
         //Calculate the next pos with Heun's method (Improved Euler)
-        //
         //Calculate acceleration in each rope section which is what is needed to get the next pos and vel
         List<Vector3> accelerationFromEuler = CalculateAccelerations(nextPosVelForwardEuler);
 
@@ -360,8 +346,6 @@ public class RopeController : MonoBehaviour
             }
         }
     }
-
-
 
     //Move a rope section based on stretch/compression
     private void MoveSection(Vector3 finalChange, int listPos)
