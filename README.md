@@ -16,10 +16,10 @@ randomilt genereeritud kala.
 ## Paigaldus:
 
 ## Tech Stack:  
-Unity 2021.3.15f1 (C#)  
-Firebase
-Blender
-InkScape
+- Unity 2021.3.15f1 (C#)  
+- Firebase
+- Blender
+- InkScape
 
 ## Mis oli kerge:
 - Sprite lisamine UI elementidele
