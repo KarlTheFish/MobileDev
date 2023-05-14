@@ -20,8 +20,8 @@ Tech Stack:
 Unity 2021.3.15f1  
 Firebase
 
-Mis oli kerge:
+Mis oli kerge:  
 
-Mis oli raske:
-- Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).  
+Mis oli raske:  
+Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).  
 
