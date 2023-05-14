@@ -23,5 +23,5 @@ Firebase
 Mis oli kerge:
 
 Mis oli raske:
-
+- Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).  
 
