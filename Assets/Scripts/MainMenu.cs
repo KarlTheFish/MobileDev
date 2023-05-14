@@ -8,7 +8,10 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenuUI;
     public GameObject loginUI;
     public GameObject registerUI;
+    public GameObject loginCanvasUI;
     // Start is called before the first frame update
+
+    //Erinevad funktsioonid stseeni ja paneelide vaheetamiseks
    public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -35,7 +38,7 @@ public class MainMenu : MonoBehaviour
     }
     public void MainMenuScreen()
     {
-        loginUI.SetActive(false);
+        loginCanvasUI.SetActive(false);
         mainMenuUI.SetActive(true);
     }
 }
