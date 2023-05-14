@@ -16,7 +16,10 @@ public class Fishing : MonoBehaviour
     void Update()
     {
         rot.x = -10 * (Input.gyro.rotationRateUnbiased.x);
-        //Debug.Log(Input.gyro.attitude);
+        if (rot.x < -25)
+        {
+            Debug.Log("PULLING FISH");
+        }
         transform.Rotate(rot);
     }
 }
