@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// hold information about each rope section
+//A class that will hold information about each rope section
 public struct RopeSection
 {
     public Vector3 pos;
