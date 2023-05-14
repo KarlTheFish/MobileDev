@@ -16,7 +16,7 @@ randomilt genereeritud kala.
 ## Paigaldus:
 
 ## Dokumentatsioon:
-Tech Stack:
+Tech Stack:  
 Unity 2021.3.15f1  
 Firebase
 
