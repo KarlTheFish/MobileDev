@@ -17,7 +17,7 @@ randomilt genereeritud kala.
 
 ## Dokumentatsioon:
 Tech Stack:
-Unity 2021.3.15f1 \n
+Unity 2021.3.15f1  
 Firebase
 
 Mis oli kerge:
