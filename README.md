@@ -5,7 +5,7 @@
 - Karl Vask
 - Christian - Enrique Hindremäe
 - Thomas Saar
-- Karl Piiber
+- Robin Kukke
 - Kristjan Tamm
 - Ragnar Valdre
 
@@ -15,13 +15,16 @@ randomilt genereeritud kala.
 
 ## Paigaldus:
 
-## Dokumentatsioon:
-Tech Stack:  
-Unity 2021.3.15f1  
+## Tech Stack:  
+Unity 2021.3.15f1 (C#)  
 Firebase
+Blender
+InkScape
 
-Mis oli kerge:  
+## Mis oli kerge:
+- Sprite lisamine UI elementidele
 
-Mis oli raske:  
-Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).  
+## Mis oli raske:  
+- Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).
+- UI elementide sidumine koodiga tekitas kohati raskusi (ebasobivad elemenditüübid)
 
