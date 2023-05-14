@@ -16,7 +16,7 @@ randomilt genereeritud kala.
 ## Paigaldus:
 
 ## Dokumentatsioon:
-Kasutatud teegid:
+Tech Stack:
 
 Mis oli kerge:
 
