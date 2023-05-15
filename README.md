@@ -3,7 +3,7 @@
 
 ## Autorid:
 - Karl Vask
-- Christian - Enrique Hindremäe
+- Christian - Enrique Hindremäe (Frontend, UI, 3D Assets)
 - Thomas Saar
 - Robin Kukke
 - Kristjan Tamm
