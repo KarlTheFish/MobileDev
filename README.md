@@ -20,6 +20,7 @@ randomilt genereeritud kala.
 - Firebase
 - Blender
 - InkScape
+- GNU Image Manipulation Tool
 
 ## Mis oli kerge:
 - Sprite lisamine UI elementidele
