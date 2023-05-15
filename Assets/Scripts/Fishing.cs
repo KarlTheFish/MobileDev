@@ -56,6 +56,7 @@ public class Fishing : MonoBehaviour
             else {
                 FishObject.Destroy();
                 Debug.Log("No fish got");
+                FishHooked = false;
             }
             yield return new WaitForSeconds(2);
         }

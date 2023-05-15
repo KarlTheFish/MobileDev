@@ -5,6 +5,7 @@ using UnityEngine;
 public class TextureLoad : MonoBehaviour
 {
     private int TextureID;
+    private string TexturePath;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,20 @@ public class TextureLoad : MonoBehaviour
 
     void GenerateTexture() {
         TextureID = Random.Range(0, 4); //change 4 to however many textures you have
-        gameObject.GetComponent<MeshRenderer>().materials[0].mainTexture = Resources.Load<Texture>("FishTexture/Fish" + (TextureID + 3)); //The textireID + 3 is there because I was too lazy to change the texture filenames, cope and seethe
+        switch (gameObject.tag)
+        {
+            case "Fish1":
+                TexturePath += "FishTexture"; 
+                break;
+            case "Fish2":
+                TexturePath += "FishTexture1";
+                break;
+            case "Fish3":
+                TexturePath += "FishTexture2";
+                break;
+        }
+        TexturePath += "/Fish" + TextureID;
+        
+        gameObject.GetComponent<MeshRenderer>().materials[0].mainTexture = Resources.Load<Texture>(TexturePath);
     }
 }
