@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Cube Base Color
-    second: {fileID: 2800000, guid: fdab35283b3095844bf407257659daf7, type: 3}
+    second: {fileID: 2800000, guid: f09d608a55ae0fe00a0d92135bad075e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -8,6 +8,7 @@ using Firebase.Database;
 
 public class AuthManager : MonoBehaviour
 {
+    public static AuthManager instance;
     //Class ref and Firebase variables
 
     public MainMenu menu;
@@ -30,6 +31,7 @@ public class AuthManager : MonoBehaviour
 
     //User Data variables
 
+    public int globalScore;
     public GameObject scoreElement;
     public Transform scoreboardContent;
     public InputField usernameField;
@@ -39,6 +41,10 @@ public class AuthManager : MonoBehaviour
     //Funktsioonide välja kutsumine
     private void Awake()
     {
+        instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
             dependencyStatus = task.Result;
@@ -271,7 +277,7 @@ public class AuthManager : MonoBehaviour
         }
     }
     
-    private IEnumerator UpdateScore(int _score)
+    public IEnumerator UpdateScore(int _score)
     {
         var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").SetValueAsync(_score);
 
@@ -301,12 +307,14 @@ public class AuthManager : MonoBehaviour
         {
             //Pole andmeid
             scoreField.text = "0";
+            globalScore = 0;
         }
         else
         {
             DataSnapshot snapshot = DBTask.Result;
 
             scoreField.text = snapshot.Child("score").Value.ToString();
+            globalScore = (int)snapshot.Child("score").Value;
         }
     }
 }
