@@ -8,6 +8,7 @@ TagManager:
   - Fish2
   - Fish3
   - Database
+  - Spawnable
   layers:
   - Default
   - TransparentFX
