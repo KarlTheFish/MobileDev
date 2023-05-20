@@ -2,7 +2,7 @@
 2023 kevad TLÜ mobiilrakenduste programmeerimise kursus
 
 ## Autorid:
-- Karl Vask
+- Karl Vask (AR functionality, fishing functionality)
 - Christian - Enrique Hindremäe (Frontend, UI, 3D Assets)
 - Thomas Saar
 - Robin Kukke (Map and map features - Mapbox SDK, Basic AR functionality)
