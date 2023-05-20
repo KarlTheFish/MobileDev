@@ -15,7 +15,7 @@ public class RopeController : MonoBehaviour
     public List<RopeSection> allRopeSections = new List<RopeSection>();
 
     //Rope data
-    private float ropeSectionLength = 1f;
+    private float ropeSectionLength = 110f;
 
     //Data we can change to change the properties of the rope
     //Spring constant
@@ -95,7 +95,7 @@ public class RopeController : MonoBehaviour
     //Display the rope with a line renderer
     private void DisplayRope()
     {
-        float ropeWidth = 0.2f;
+        float ropeWidth = 5f;
 
         lineRenderer.startWidth = ropeWidth;
         lineRenderer.endWidth = ropeWidth;

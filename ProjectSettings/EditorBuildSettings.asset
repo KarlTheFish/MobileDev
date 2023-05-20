@@ -5,27 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: af0db4e53b6797a44bd64769123f7487
-  - enabled: 1
+  - enabled: 0
     path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
     guid: 42f6aa7ce7a604f16ade319663f46ceb
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PhoneCamera.unity
     guid: df8ae0b2957d8e6408790ef400e17924
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR.unity
     guid: 30e2be13bbaa80b4ca477653246fa4c1
   - enabled: 0
     path: Assets/Scenes/MainMenuOld.unity
     guid: 65c11a01968d078499d63da88650595e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Fishing.unity
     guid: 29947323b039a10468cbf53f9dae1f11
+  - enabled: 1
+    path: Assets/Scenes/ARnew.unity
+    guid: 8f0de43fdfb30d8ce82b10588a7659e3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5369bee48ca9da44aab8802d4d28c7fd,
       type: 2}
