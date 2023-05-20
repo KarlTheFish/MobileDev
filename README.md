@@ -6,7 +6,7 @@
 - Christian - Enrique Hindremäe (Frontend, UI, 3D Assets)
 - Thomas Saar
 - Robin Kukke (Map and map features - Mapbox SDK, Basic AR functionality)
-- Kristjan Tamm
+- Kristjan Tamm (Fishing functionality, Fishing rod, Realistic rope)
 - Ragnar Valdre
 
 ## Projekti idee:
