@@ -9,7 +9,7 @@ public class Fishing : MonoBehaviour
 
     public int localScore;
     public int number;
-
+    
     private bool FishHooked;
     private int FishPulling;
     private GameObject FishObject;
