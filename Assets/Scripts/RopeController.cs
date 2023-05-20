@@ -15,7 +15,7 @@ public class RopeController : MonoBehaviour
     public List<RopeSection> allRopeSections = new List<RopeSection>();
 
     //Rope data
-    private float ropeSectionLength = 20f;
+    private float ropeSectionLength = 110f;
 
     //Data we can change to change the properties of the rope
     //Spring constant
