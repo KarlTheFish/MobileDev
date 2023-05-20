@@ -7,16 +7,14 @@ using UnityEngine.XR.ARSubsystems;
 public class ARcursor : MonoBehaviour
 {
     public ARRaycastManager raycastManager; // Detects the planes we touch
-    public ARPlaneManager planeManager; // Manages the visibility of detected planes
     public GameObject Lake; // The Lake game object
-    public GameObject UItext; // The UI text game object
+
+    private GameObject UItext;
     
     private bool LakePlaced = false; // Tracks if the lake is already placed
 
     void Start()
     {
-        // Disable the visualization of the detected planes
-        planeManager.planePrefab.SetActive(false);
         UItext = GameObject.Find("Text");
     }
 
@@ -25,6 +23,10 @@ public class ARcursor : MonoBehaviour
         if (!LakePlaced)
         {
             PlaceLakeOnPlane();
+        }
+        if (LakePlaced)
+        {
+            UItext.SetActive(false);
         }
     }
 
@@ -41,6 +43,5 @@ public class ARcursor : MonoBehaviour
             GameObject.Instantiate(Lake, position, rotation);
             LakePlaced = true;
         }
-        UItext.SetActive(false);
     }
 }
