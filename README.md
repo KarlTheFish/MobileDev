@@ -5,7 +5,7 @@
 - Karl Vask
 - Christian - Enrique Hindremäe (Frontend, UI, 3D Assets)
 - Thomas Saar
-- Robin Kukke
+- Robin Kukke (Map and map features - Mapbox SDK, Basic AR functionality)
 - Kristjan Tamm
 - Ragnar Valdre
 
