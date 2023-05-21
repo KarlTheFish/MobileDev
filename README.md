@@ -7,7 +7,7 @@
 - Thomas Saar (Back-end, UI fix, Builder)
 - Robin Kukke (Map and map features - Mapbox SDK, Basic AR functionality)
 - Kristjan Tamm (Fishing functionality, Fishing rod, Realistic rope)
-- Ragnar Valdre
+
 
 ## Projekti idee:
 Luua Augmented Reality mäng kalapüügi kohta (midagi sarnast pokemon GO-le), kus kasutaja liigub kaardile tekkinud kalapüügi kohale ning püüab
