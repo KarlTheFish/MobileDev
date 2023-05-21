@@ -4,7 +4,7 @@
 ## Autorid:
 - Karl Vask (AR functionality, fishing functionality)
 - Christian - Enrique Hindremäe (Frontend, UI, 3D Assets)
-- Thomas Saar
+- Thomas Saar (Back-end, UI fix, Builder)
 - Robin Kukke (Map and map features - Mapbox SDK, Basic AR functionality)
 - Kristjan Tamm (Fishing functionality, Fishing rod, Realistic rope)
 - Ragnar Valdre
