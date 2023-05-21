@@ -152,8 +152,8 @@ public class AuthManager : MonoBehaviour
             menu.loginUI.SetActive(false);
             menu.loginCanvasUI.SetActive(false);
             menu.mainMenuUI.SetActive(true);
-            StartCoroutine(LoadUserData());
             User = LoginTask.Result;
+            StartCoroutine(LoadUserData());
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = null;
             confirmLoginText.text = "Logged In";
@@ -233,6 +233,8 @@ public class AuthManager : MonoBehaviour
                         yield return new WaitForSeconds(2);
                         menu.loginUI.SetActive(true);
                         menu.registerUI.SetActive(false);
+                        StartCoroutine(UpdateUsernameDatabase(_username));
+                        StartCoroutine(UpdateScore(0));
                         ClearLoginFields();
                         ClearRegisterField();
                     }
@@ -293,7 +295,7 @@ public class AuthManager : MonoBehaviour
         }
     }
     //Data laadimine andmebaasist
-    private IEnumerator LoadUserData()
+    public IEnumerator LoadUserData()
     {
         var DBTask = DBreference.Child("users").Child(User.UserId).GetValueAsync();
 
@@ -306,15 +308,18 @@ public class AuthManager : MonoBehaviour
         else if(DBTask.Result.Value == null)
         {
             //Pole andmeid
-            scoreField.text = "0";
             globalScore = 0;
         }
         else
         {
             DataSnapshot snapshot = DBTask.Result;
 
+            Debug.Log("Hi");
+
             scoreField.text = snapshot.Child("score").Value.ToString();
+            usernameField.text = snapshot.Child("username").Value.ToString();
             globalScore = (int)snapshot.Child("score").Value;
+            
         }
     }
 }
