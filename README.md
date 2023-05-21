@@ -24,10 +24,12 @@ randomilt genereeritud kala.
 
 ## Mis oli kerge:
 - Sprite lisamine UI elementidele
+- GitHubi seadistamine (üllatavalt ei olnud probleeme)
 
 ## Mis oli raske:  
 - Githubis pärast pushimist tekkinud errorid (parandatakse üks asi ära ja selle tulemusel läheb midagi muud katki).
 - UI elementide sidumine koodiga tekitas kohati raskusi (ebasobivad elemenditüübid)
+- Back-end'i fiximine, et andmeedastus oleks korrektne (sisseehitatud funktsioonid mõnikord tekitasid tupikuid koodis)
 
 ## Screenshots:
 Main menu / Map screenshotid  
